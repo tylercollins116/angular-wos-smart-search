@@ -9,7 +9,7 @@ export class WosNextgenTypeaheadService {
      console.log('WosNextgenTypeaheadService Constructor');
    }
 
-  orgUrl: string =  'http://localhost:7001/suggest/tyler/'
+  orgUrl: string =  'http://tamr.oneplatform.build:8676/suggest/tyler/'
   getOrgSuggestions(query: string): Observable<string[]> {
      return this.httpClient.get<string[]>(this.orgUrl + query);
 
